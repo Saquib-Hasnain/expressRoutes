@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .formm{
+            border: solid;
+            width: 600px;
+            padding: 10px;
+            border-color:rgb(255, 191, 0) ;
+            margin: auto;
+            border-radius: 10px;
+            background-color: aliceblue;
+            
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-image: url(https://uploads-ssl.webflow.com/62e97ad0c317c10af2a3e05a/630fc8afc1c8ec3df6fbf5ea_omni%20channel_%20swivl-p-500.png)
+        }
+        h2{
+            text-align: center;
+            color:rgb(255, 191, 0);
+        }
+        h5{
+            text-align: center;
+        }
+        input[type=text]{
+            margin: 1px;
+            padding: 4px;
+            width: 590px;
+        }
+        input[type=email]{
+            margin: 1px;
+            padding: 4px;
+            width: 590px;
+        }
+        input[type=date]{
+            margin: 1px;
+            padding: 4px;
+            width: 288px;
+        }
+        input[type=time]{
+            margin: 1px;
+            padding: 3px;
+            width: 286px;
+        }
+        input[type=submit]{
+            margin: 2px;
+            padding: 8px;
+            width: 600px;
+            background-color: rgb(255, 191, 0);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="formm">
+
+
+    <h2>Book a call </h2>
+    <h5>Book a call  and representative will call you within 1hr of selected time</h5>
+    
+    <hr width="100%" size="4px">
+    <form action="/success" method="POST">
+    <label for="name"><b>Name:</b></label>
+    <br>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" >
+    <br><br>
+    <label for="email"><b>Email:</b></label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+    <br>
+    <br>
+    <button type="submit">Get A Call</button>
+</form>
+    </div>
+
+
+</body>
+</html>
